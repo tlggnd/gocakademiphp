@@ -6,20 +6,20 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--favicon-->
-	<link rel="icon" href="assets/images/favicon-32x32.png" type="image/png" />
+	<link rel="icon" href="../assets/images/favicon-32x32.png" type="image/png" />
 	<!--plugins-->
-	<link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
-	<link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
-	<link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+	<link href="../assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+	<link href="../assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
 	<!-- loader-->
-	<link href="assets/css/pace.min.css" rel="stylesheet" />
-	<script src="assets/js/pace.min.js"></script>
+	<link href="../assets/css/pace.min.css" rel="stylesheet" />
+	<script src="../assets/js/pace.min.js"></script>
 	<!-- Bootstrap CSS -->
-	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-	<link href="assets/css/bootstrap-extended.css" rel="stylesheet">
+	<link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../assets/css/bootstrap-extended.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-	<link href="assets/css/app.css" rel="stylesheet">
-	<link href="assets/css/icons.css" rel="stylesheet">
+	<link href="../assets/css/app.css" rel="stylesheet">
+	<link href="../assets/css/icons.css" rel="stylesheet">
 	<!-- Sweet Alert -->
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
@@ -38,7 +38,7 @@
 							<div class="card-body">
 								<div class="p-4">
 									<div class="mb-3 text-center">
-										<img src="assets/images/logo-icon.png" width="60" alt="" />
+										<img src="../assets/images/logo-icon.png" width="60" alt="" />
 									</div>
 									<div class="text-center mb-4">
 										<h5 class="">Yönetim Paneli</h5>
@@ -56,17 +56,10 @@
 													<input type="password" class="form-control border-end-0" id="kullanici_password" value="12345678" name="kullanici_password"placeholder="Şifrenizi Giriniz"> <a href="javascript:;" class="input-group-text bg-transparent"><i class='bx bx-hide'></i></a>
 												</div>
 											</div>
-											
-											<div class="col-md-6 text-end">	<a href="auth-basic-forgot-password.html">Şifrenimi Unuttum...</a>
+											<div class="col-md-6 text-end">	<a href="#">Şifrenimi Unuttum...</a>
 											</div>
 											<div class="col-12">
 												<div class="d-grid">
-													<?php if ($bilgi) { ?>
-														<div class="alert alert-<?= $deger; ?> alert-dismissable">
-															<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-															<h4><i class="icon fa fa-check"></i> <?= $bilgi; ?></h4>
-														</div>
-													<?php } ?>
 													<button type="submit" class="btn btn-light">Giriş Yap</button>
 												</div>
 											</div>
@@ -95,9 +88,9 @@
 	<!--end wrapper-->
 
 	<!-- Bootstrap JS -->
-	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="../assets/js/bootstrap.bundle.min.js"></script>
 	<!--plugins-->
-	<script src="assets/js/jquery.min.js"></script>
+	<script src="../assets/js/jquery.min.js"></script>
 	<!--Password show & hide js -->
 	<script>
 		$(document).ready(function () {
@@ -127,7 +120,7 @@
 				$.ajax({
 
 					type:"POST"
-					url:"../yonetim/islem.php"
+					url:"../netting/islem.php"
 					data:formDetails.serialize(),
 					succes: fonction(data) {
 

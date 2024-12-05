@@ -1,5 +1,5 @@
 
-<p?php 
+<?php 
 
 $sayfa = "İletişim";
 

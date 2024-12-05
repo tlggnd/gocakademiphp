@@ -1,3 +1,10 @@
+<?php
+include "yonetim/netting/baglan.php";
+$ayarsor=$db->prepare("select * from ayar where ayar_id=?")
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="tr"> 
 	<head>

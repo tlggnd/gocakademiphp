@@ -1,15 +1,10 @@
-<?php include_once "init.php"; ?>
-<?php 
-
-$sayfa = "Ana Sayfa";
-
-?>
-
-<title>Göç Akademi ve Danışmanlık || <?php echo $sayfa; ?></title>
-
 <?php 
 
 require_once 'header.php'; ?>
+
+<title>Göç Akademi ve Danışmanlık || <?php echo $sayfa; ?></title>
+
+
 			
 			<!--Full width header End-->
 
